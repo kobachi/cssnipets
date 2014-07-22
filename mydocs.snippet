@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>MyDocumentsのパス</Title>
+			<Shortcut>mydocs</Shortcut>
+			<Description>Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) に対するコード スニペット</Description>
+			<Author>kobachi</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal Editable="false">
+					<ID>SystemEnvironment</ID>
+					<Function>SimpleTypeName(System.Environment)</Function>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[$SystemEnvironment$.GetFolderPath($SystemEnvironment$.SpecialFolder.MyDocuments)]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

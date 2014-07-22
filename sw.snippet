@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>StreamWriter</Title>
+			<Shortcut>sw</Shortcut>
+			<Description>System.IO.StreamWriter に対するコード スニペット</Description>
+			<Author>kobachi</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal Editable="false">
+					<ID>StreamWriter</ID>
+					<Function>SimpleTypeName(System.IO.StreamWriter)</Function>
+				</Literal>
+				<Literal>
+					<ID>FileName</ID>
+					<ToolTip>ファイル名</ToolTip>
+					<Default>""</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[using(var sr = new $StreamWriter$($FileName$)) {
+	$end$
+}]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

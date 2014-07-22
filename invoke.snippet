@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>this.Invoke</Title>
+			<Shortcut>ti</Shortcut>
+			<Description>マルチスレッド環境における安全なコントロール呼び出し</Description>
+			<Author>kobachi</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Code Language="csharp"><![CDATA[this.Invoke(() => {
+	$selected$$end$
+});]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
